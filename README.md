@@ -13,19 +13,19 @@
 5.	Login to Azure Portal with new user “aksuser01” and opened cloud shell
 
 6.	Connect to the AKS cluster “myAKSCluster “ using commands from Azure Portal and create Pod with “hello-world“ Container conataining  “hello-world” application image & Load Balance Service “hello-world-load-balancer“ using manifest files 
-# kubectl get nodes
-# kubectl get pods
-# kubectl apply -f ajit-hello_world-depl_v2.yml
-# kubectl apply -f ajit-hello_world-svc_v2.yml
-# kubectl get nodes
-# kubectl get pods
+$ kubectl get nodes
+$ kubectl get pods
+$ kubectl apply -f ajit-hello_world-depl_v2.yml
+$ kubectl apply -f ajit-hello_world-svc_v2.yml
+$ kubectl get nodes
+$ kubectl get pods
 
 7.	Extract  external IP from the service “hello-world-load-balancer” and browse the “hello-world” app in new tab
-# kubectl get service hello-world-load-balancer –watch
+$ kubectl get service hello-world-load-balancer –watch
 
 8.	Scaling Pods to 3 and browse the “hello-world” app again in new tab
-# kubectl scale --replicas=3 deployment/hello-world
+$ kubectl scale --replicas=3 deployment/hello-world
 
 9.	Scale down Pods to 1 and connect to a Pod
-# kubectl scale --replicas=3 deployment/hello-world
-# kubectl exec --stdin --tty hello-world-6b58f8d7f-v96ln -- sh
+$ kubectl scale --replicas=3 deployment/hello-world
+$ kubectl exec --stdin --tty hello-world-6b58f8d7f-v96ln -- sh
