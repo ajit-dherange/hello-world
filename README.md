@@ -1,2 +1,2 @@
-# AZ AKS hello-world Application
+# AZ AKS Hello-World Application
 
