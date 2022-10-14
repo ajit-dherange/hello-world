@@ -37,7 +37,7 @@
 
     $ kubectl scale --replicas=3 deployment/hello-world
 
-9.	Scale down Pods to 1 and connect to a Pod
+9.	Scale down Pods to 1 
 
     $ kubectl scale --replicas=1 deployment/hello-world
     
