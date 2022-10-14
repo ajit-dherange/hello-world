@@ -39,8 +39,8 @@
 
 9.	Scale down Pods to 1 and connect to a Pod
 
-   $ kubectl scale --replicas=1 deployment/hello-world
-
+    $ kubectl scale --replicas=1 deployment/hello-world
+    
 10. Connect to the pod using SSH
 
     $ kubectl get pods -o wide
