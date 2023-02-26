@@ -1,12 +1,12 @@
 # AZ AKS Hello-World Application
 
-1.	Login to Azure Portal
+1.	Login to Azure Portal and open clous shell 
 
-2.	Open AZ Cloud shell and Create Resource group “myResourceGroup” & AKS Cluster “myAKSCluster” with one node
+2.	Open AZ Cloud shell and Create Resource group “myResourceGroup” & AKS Cluster “myAKSCluster” with one node using below commands
 
-   $ az group create --name myResourceGroup --location centralus 
+      $ az group create --name myResourceGroup --location centralus 
    
-   $ az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 1 --node-vm-size Standard_B2s --enable-addons monitoring --generate-ssh-keys
+      $ az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 1 --node-vm-size Standard_B2s --enable-addons monitoring --generate-ssh-keys
 
 3.	Create new user “aksuser01” in Azure Active Directory (goto Azure Active Directory and select new user)
 
